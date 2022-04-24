@@ -2,7 +2,7 @@
 
 namespace FilmBuff.Services
 {
-    public class ConnectionSerrvice
+    public class ConnectionService
     {
         public static string GetConnectionString(IConfiguration configuration)
         {
