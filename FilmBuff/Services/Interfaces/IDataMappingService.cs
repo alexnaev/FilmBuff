@@ -5,7 +5,7 @@ namespace FilmBuff.Services.Interfaces
 {
     public interface IDataMappingService
     {
-        Task<Movie> MapMovieDetailAsync(MovieDetail movie);
-        ActorDetail MapActorDetail(ActorDetail actor);
+        public Task<Movie> MapMovieDetailAsync(MovieDetail movie);
+        public ActorDetail MapActorDetail(ActorDetail actor);
     }
 }

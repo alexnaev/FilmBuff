@@ -147,7 +147,7 @@ namespace FilmBuff.Services
         private string BuildTrailerPath(Videos videos)
         {
             var videoKey = videos.results.FirstOrDefault(r => r.type.ToLower().Trim() == "trailer" && r.key != "")?.key;
-            return String.IsNullOrEmpty(videoKey) ? videoKey : $"{_appSettings.TMDBSettings.BaseYouTubePath}{videoKey}";
+            return string.IsNullOrEmpty(videoKey) ? videoKey : $"{_appSettings.TMDBSettings.BaseYouTubePath}{videoKey}";
         }
 
         private async Task<byte[]> EncodeBackdropImageAsync(string path)
